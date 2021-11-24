@@ -85,12 +85,15 @@ class Board {
     }
     //Metode som printer boardet
     void visBræt () {
+        String kant = "";
         for (int x = 0; x < boardsize; x++) {
             for (int y = 0; y < boardsize; y++) {
                 System.out.print(spilleplade[y][x] + " ");
             }
             System.out.println();
+            kant += x+" ";
         }
+        System.out.println(kant);
     }
     //opdater
 
